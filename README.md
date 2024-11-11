@@ -33,19 +33,33 @@ If you need to make changes to or have any ideas for improvement at this, please
 
 ## Setup
 
-    ```Bash
-    $ git clone git@github.com:salimane/flask-mvc.git
-    $ cd flask-mvc
-    $ asdf local python 3.10.11
-    $ pipx install virtualenv
-    $ Run ``make setup``
-    ```
+For Windows users, it is useful to clone from Git using `--config core.autocrlf=false` to ensure the files are copied using LF end of line characters and not CRLF.
 
-## Running
-
-* Run in console with 
+```shell
+# Bash
+$ git clone --config core.autocrlf=false git@github.com:salimane/flask-mvc.git
+$ cd flask-mvc
 ```
+
+then
+
+```shell
+# Bash
+$ asdf local python 3.10.11
+$ pipx install virtualenv
+$ make setup
 $ make run
+```
+
+or if you have Python 3.3 or greater
+
+```shell
+# Bash
+$ python3 -m venv .venv           # (assuming Python 3.x installed) creates a virtual environment directory, .venv (if not already); venv is included in Python 3.3>
+$ . .venv/bin/activate            # activates the virtual environment
+(.venv) $ make setup              # install requirements for the virtual environment (if not already)
+(.venv) $ make run                # run the local server
+(.venv) $ deactivate              # exit the virtual environment
 ```
 
 ## Contributing

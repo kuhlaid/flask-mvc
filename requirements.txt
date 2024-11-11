@@ -30,3 +30,4 @@ flower==1.2.0
 itsdangerous==2.1.2
 cssmin==0.2.0
 jsmin==3.0.1
+Werkzeug==2.2.2

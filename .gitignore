@@ -4,6 +4,7 @@
 *.DS_STORE
 config/config.py
 !config/config.py.example
-.*-venv*/
+.venv
 data/*
 temp/
+.flask-mvc-venv*

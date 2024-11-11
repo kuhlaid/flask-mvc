@@ -8,4 +8,4 @@ fi
 export VIRTUAL_ENV_DIR="$REPO_DIR/$PYTHON_VIRTUALENV"
 python -m venv $PYTHON_VIRTUALENV
 echo "Using virtualenv located in : $VIRTUAL_ENV_DIR"
-pip install -r $REPO_DIR/requirements.txt
+pip install -r "$REPO_DIR/requirements.txt"
